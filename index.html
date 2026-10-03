@@ -1,499 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Learn for Infinity — Homepage Preview v4</title>
+<html lang="en"><head><meta charset="UTF-8"><title>Learn for Infinity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#F6EFDC;
-    --paper-deep:#EDE0BE;
-    --ink:#1A1610;
-    --ink-soft:#5C5344;
-    --rust:#D6420F;
-    --forest:#127A4F;
-    --mustard:#F0A202;
-    --sky:#1F6FB2;
-    --coral:#E85D4C;
-    --line:#D8C7A0;
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif;
-    line-height:1.55; font-size:16px;
-  }
-  .serif{font-family:'Fraunces',serif;}
-  .mono{font-family:'Space Mono',monospace;}
-  .hand{font-family:'Caveat',cursive;}
-  a{color:inherit; text-decoration:none;}
-  .wrap{max-width:1120px; margin:0 auto; padding:0 36px;}
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body><div class="grain"></div><canvas id="trail"></canvas>
+<nav><div class="wrap">
+<a class="logo-block" href="index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
+<svg class="logo-underline" viewBox="0 0 212 8"><path d="M2,5 C50,2 160,2 210,5"/></svg>
+<div class="logo-tagline">business · finance · technology</div></a>
+<div class="tabs"><a class="tab" href="explore.html">explore</a><a class="tab" href="learn.html">learn</a><a class="tab" href="academy.html">academy</a><a class="tab" href="youtube.html">youtube</a></div>
+</div></nav>
+<main class="page active" id="p-home">
+<header class="hero"><div class="hero-margin"></div><div class="wrap"><div class="hero-inner"><div>
+<div class="hero-kicker">business, finance &amp; technology —</div>
+<h1>Learn what's happening.<br>Understand how it works.<br>Go further.</h1>
+<p>Insights on the business world, learning series that start from zero, and resources for when you're ready to go deeper.</p>
+<div class="hero-cta"><a class="btn btn-primary" href="explore.html">explore insights →</a><a class="btn btn-secondary" href="learn.html">start learning</a></div></div>
+<div class="video-card"><div class="video-thumb"><svg class="art inf" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path class="infp" d="M30 30C30 8 60 8 60 30C60 52 90 52 90 30C90 8 60 8 60 30C60 52 30 52 30 30Z" fill="none" stroke="#F6EFDC" stroke-width="5" stroke-linecap="round"/></svg><div class="video-play"><div class="tri"></div></div></div>
+<div class="video-caption"><span class="t">meet learn for infinity</span><span class="d">1:32</span></div></div>
+</div></div></header>
 
-  .grain{
-    position:fixed; inset:0; pointer-events:none; opacity:0.3; mix-blend-mode:multiply; z-index:1;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
-  }
+<section class="section"><div class="wrap">
+<div class="section-title-row"><div><span class="section-sub">what's happening —</span><h2>Explore</h2></div><a class="viewall" href="explore.html">view all insights</a></div>
+<div class="explore-grid"><div class="clip-card" data-t="business"><svg class="art " viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g><rect class="bar" x="14" y="46" width="18" height="30" fill="#127A4F" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="40" y="34" width="18" height="42" fill="#F0A202" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="66" y="40" width="18" height="36" fill="#1F6FB2" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="92" y="18" width="18" height="58" fill="#D6420F" stroke="#1A1610" stroke-width="2"/></g><path d="M8 78H114" stroke="#1A1610" stroke-width="3" stroke-linecap="round"/><path class="dr" d="M12 40L44 24L68 30L104 8" fill="none" stroke="#1A1610" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="card-type business">business</div><div class="card-title">Why companies fail despite having good products</div><div class="card-excerpt">A good product isn't enough. What separates businesses that survive from ones that don't.</div><div class="card-meta">6 min read</div></div><div class="clip-card" data-t="finance"><svg class="art " viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="82" rx="26" ry="5" fill="#1A1610" opacity=".15"/><g class="float"><g class="coin"><circle cx="60" cy="42" r="26" fill="#F0A202" stroke="#1A1610" stroke-width="3"/><circle cx="60" cy="42" r="19" fill="none" stroke="#1A1610" stroke-width="1.5" stroke-dasharray="3 3"/><text x="60" y="49" text-anchor="middle" font-family="Space Mono,monospace" font-weight="700" font-size="20" fill="#1A1610">Rs</text></g></g><circle class="spark" cx="100" cy="20" r="4" fill="#E85D4C"/><circle class="spark s2" cx="18" cy="30" r="3" fill="#1F6FB2"/></svg><div class="card-type finance">finance</div><div class="card-title">What IFRS 18 changes, explained simply</div><div class="card-excerpt">The new standard reshapes how income statements look. Here's what's different.</div><div class="card-meta">5 min read</div></div><div class="clip-card" data-t="technology"><svg class="art " viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="84" rx="28" ry="4" fill="#1A1610" opacity=".15"/><g class="float"><line x1="60" y1="10" x2="60" y2="20" stroke="#1A1610" stroke-width="3"/><circle class="spark" cx="60" cy="8" r="5" fill="#E85D4C" stroke="#1A1610" stroke-width="2"/><rect x="26" y="20" width="68" height="50" rx="14" fill="#1F6FB2" stroke="#1A1610" stroke-width="3"/><rect x="14" y="36" width="8" height="18" rx="3" fill="#F0A202" stroke="#1A1610" stroke-width="2"/><rect x="98" y="36" width="8" height="18" rx="3" fill="#F0A202" stroke="#1A1610" stroke-width="2"/><g class="eyes"><circle cx="46" cy="42" r="7" fill="#F6EFDC"/><circle cx="74" cy="42" r="7" fill="#F6EFDC"/><circle cx="47" cy="43" r="3" fill="#1A1610"/><circle cx="75" cy="43" r="3" fill="#1A1610"/></g><path d="M46 57Q60 66 74 57" fill="none" stroke="#F6EFDC" stroke-width="3" stroke-linecap="round"/></g></svg><div class="card-type technology">technology</div><div class="card-title">What is an AI agent, really?</div><div class="card-excerpt">Not just a chatbot. A plain explanation of what agents do differently.</div><div class="card-meta">4 min read</div></div></div>
+</div></section>
 
-  /* NAV — bigger brand presence */
-  nav{padding:24px 0 0; position:relative; z-index:5;}
-  nav .wrap{display:flex; align-items:flex-start; justify-content:space-between;}
-  .logo-block{display:flex; flex-direction:column; gap:4px;}
-  .logo{
-    font-family:'Fraunces',serif; font-size:32px; font-weight:600; display:flex; align-items:center; gap:10px;
-    letter-spacing:-0.01em; position:relative;
-  }
-  .logo-loop{width:34px; height:20px; overflow:visible;}
-  .logo-loop path{
-    fill:none; stroke:var(--rust); stroke-width:2.6; stroke-linecap:round;
-    stroke-dasharray:130; stroke-dashoffset:130; animation:loopdraw 1.2s ease forwards 0.1s;
-  }
-  @keyframes loopdraw{ to{stroke-dashoffset:0;} }
-  .logo-underline{width:212px; height:8px; margin-left:44px;}
-  .logo-underline path{
-    fill:none; stroke:var(--mustard); stroke-width:5; stroke-linecap:round;
-    stroke-dasharray:220; stroke-dashoffset:220; animation:loopdraw 0.7s ease forwards 0.7s;
-  }
-  .logo-tagline{
-    font-family:'Space Mono',monospace; font-size:11.5px; color:var(--ink-soft); margin-left:44px;
-    letter-spacing:0.02em;
-  }
+<section class="section"><div class="wrap">
+<div class="section-title-row"><div><span class="section-sub">start from zero —</span><h2>Learn</h2></div><a class="viewall" href="learn.html">browse all series</a></div>
+<div class="index-list">
+<a class="index-row" href="learn.html"><div class="index-num"><svg class="art sm" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 22Q36 12 12 20V72Q36 64 60 74Z" fill="#F6EFDC" stroke="#1A1610" stroke-width="3" stroke-linejoin="round"/><path d="M60 22Q84 12 108 20V72Q84 64 60 74Z" fill="#EDE0BE" stroke="#1A1610" stroke-width="3" stroke-linejoin="round"/><g stroke="#127A4F" stroke-width="3" stroke-linecap="round" fill="none"><path class="ln" d="M22 34Q38 30 50 36"/><path class="ln l2" d="M22 46Q38 42 50 48"/><path class="ln l3" d="M22 58Q38 54 50 60"/></g><g stroke="#D6420F" stroke-width="3" stroke-linecap="round" fill="none"><path class="ln l4" d="M70 36Q82 30 98 34"/><path class="ln l5" d="M70 48Q82 42 98 46"/><path class="ln l6" d="M70 60Q82 54 98 58"/></g></svg>01</div><div><div class="index-title-wrap"><span class="index-track">accounting</span><span class="index-name">Accounting Fundamentals</span></div><div class="index-desc">Start from zero and build a solid foundation — from what accounting is to reading financial statements.</div></div><div class="index-meta">10 lessons →</div></a>
+<a class="index-row" href="learn.html"><div class="index-num"><svg class="art sm" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g><rect class="bar" x="14" y="46" width="18" height="30" fill="#127A4F" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="40" y="34" width="18" height="42" fill="#F0A202" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="66" y="40" width="18" height="36" fill="#1F6FB2" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="92" y="18" width="18" height="58" fill="#D6420F" stroke="#1A1610" stroke-width="2"/></g><path d="M8 78H114" stroke="#1A1610" stroke-width="3" stroke-linecap="round"/><path class="dr" d="M12 40L44 24L68 30L104 8" fill="none" stroke="#1A1610" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>02</div><div><div class="index-title-wrap"><span class="index-track t-finance">finance</span><span class="index-name">Financial Statement Analysis</span></div><div class="index-desc">Learn how to actually read and interpret a company's financials.</div></div><div class="index-meta">8 lessons →</div></a>
+<a class="index-row" href="learn.html"><div class="index-num"><svg class="art sm" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="rot"><circle cx="60" cy="45" r="22" fill="none" stroke="#D6420F" stroke-width="16" stroke-dasharray="55 83.2"/><circle cx="60" cy="45" r="22" fill="none" stroke="#F0A202" stroke-width="16" stroke-dasharray="40 98.2" stroke-dashoffset="-55"/><circle cx="60" cy="45" r="22" fill="none" stroke="#1F6FB2" stroke-width="16" stroke-dasharray="43.2 95" stroke-dashoffset="-95"/></g><circle class="spark" cx="104" cy="16" r="4" fill="#127A4F"/><circle class="spark s2" cx="14" cy="76" r="3" fill="#E85D4C"/></svg>03</div><div><div class="index-title-wrap"><span class="index-track t-technology">technology</span><span class="index-name">Power BI for Beginners</span></div><div class="index-desc">From raw data to useful business insight, one dashboard at a time.</div></div><div class="index-meta">12 lessons →</div></a>
+</div></div></section>
 
-  .tabs{display:flex; gap:6px; margin-top:4px;}
-  .tab{
-    font-family:'Space Mono',monospace; font-size:12.5px; color:var(--paper);
-    padding:10px 20px 9px; cursor:pointer; position:relative;
-    clip-path:polygon(12% 0, 88% 0, 100% 100%, 0% 100%);
-    transition:transform 0.22s cubic-bezier(.34,1.56,.64,1), box-shadow 0.22s ease;
-  }
-  .tab:nth-child(1){background:var(--rust); transform:rotate(-3deg);}
-  .tab:nth-child(2){background:var(--forest); transform:rotate(2deg);}
-  .tab:nth-child(3){background:var(--sky); transform:rotate(-2deg);}
-  .tab:nth-child(4){background:var(--mustard); color:var(--ink); transform:rotate(3deg);}
-  .tab:hover{transform:translateY(-6px) rotate(0deg); box-shadow:0 8px 14px rgba(0,0,0,0.28);}
+<section class="section"><div class="wrap">
+<div class="section-title-row"><div><span class="section-sub">on screen —</span><h2>From YouTube</h2></div><a class="viewall" href="youtube.html">watch on youtube</a></div>
+<div class="yt-strip"><div class="yt-card"><div class="yt-thumb"><svg class="art " viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 22Q36 12 12 20V72Q36 64 60 74Z" fill="#F6EFDC" stroke="#1A1610" stroke-width="3" stroke-linejoin="round"/><path d="M60 22Q84 12 108 20V72Q84 64 60 74Z" fill="#EDE0BE" stroke="#1A1610" stroke-width="3" stroke-linejoin="round"/><g stroke="#127A4F" stroke-width="3" stroke-linecap="round" fill="none"><path class="ln" d="M22 34Q38 30 50 36"/><path class="ln l2" d="M22 46Q38 42 50 48"/><path class="ln l3" d="M22 58Q38 54 50 60"/></g><g stroke="#D6420F" stroke-width="3" stroke-linecap="round" fill="none"><path class="ln l4" d="M70 36Q82 30 98 34"/><path class="ln l5" d="M70 48Q82 42 98 46"/><path class="ln l6" d="M70 60Q82 54 98 58"/></g></svg><div class="play"></div></div><div class="yt-card-title">Debit and credit, explained with real transactions</div><div class="yt-tag">12:04 — accounting fundamentals</div></div><div class="yt-card"><div class="yt-thumb"><svg class="art " viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g><rect class="bar" x="14" y="46" width="18" height="30" fill="#127A4F" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="40" y="34" width="18" height="42" fill="#F0A202" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="66" y="40" width="18" height="36" fill="#1F6FB2" stroke="#1A1610" stroke-width="2"/><rect class="bar" x="92" y="18" width="18" height="58" fill="#D6420F" stroke="#1A1610" stroke-width="2"/></g><path d="M8 78H114" stroke="#1A1610" stroke-width="3" stroke-linecap="round"/><path class="dr" d="M12 40L44 24L68 30L104 8" fill="none" stroke="#1A1610" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="play"></div></div><div class="yt-card-title">Reading a balance sheet in 10 minutes</div><div class="yt-tag">10:41 — financial statement analysis</div></div><div class="yt-card"><div class="yt-thumb"><svg class="art " viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="82" rx="26" ry="5" fill="#1A1610" opacity=".15"/><g class="float"><g class="coin"><circle cx="60" cy="42" r="26" fill="#F0A202" stroke="#1A1610" stroke-width="3"/><circle cx="60" cy="42" r="19" fill="none" stroke="#1A1610" stroke-width="1.5" stroke-dasharray="3 3"/><text x="60" y="49" text-anchor="middle" font-family="Space Mono,monospace" font-weight="700" font-size="20" fill="#1A1610">Rs</text></g></g><circle class="spark" cx="100" cy="20" r="4" fill="#E85D4C"/><circle class="spark s2" cx="18" cy="30" r="3" fill="#1F6FB2"/></svg><div class="play"></div></div><div class="yt-card-title">Pakistan's new tax reforms, explained</div><div class="yt-tag">08:57 — explore</div></div></div>
+</div></section>
 
-  /* HERO — compact notebook page */
-  .hero{
-    padding:38px 0 46px; position:relative;
-    background-image:repeating-linear-gradient(var(--paper), var(--paper) 33px, var(--line) 34px);
-  }
-  .hero-margin{position:absolute; top:0; bottom:0; left:80px; width:1.5px; background:var(--rust); opacity:0.55;}
-  .hero .wrap{position:relative;}
-  .hero-inner{display:grid; grid-template-columns:1.3fr 0.9fr; gap:44px; align-items:center; padding-top:18px;}
+<section class="academy-section"><div class="wrap academy-inner"><div>
+<div class="academy-stamp">members only</div><h2>Go beyond <em>free</em> content.</h2>
+<p>Structured courses, textbooks, study packs and templates — for when you want to master a subject, not just understand it.</p>
+<a class="academy-btn" href="academy.html">explore academy →</a></div>
+<div class="receipt"><div class="receipt-head">learn for infinity academy</div>
+<div class="receipt-row"><div class="name">Financial Accounting Study Pack<span class="desc">PDF textbook, MCQs, revision notes</span></div><div class="price">Rs 1,500</div></div>
+<div class="receipt-row"><div class="name">Power BI for Business — Full Course<span class="desc">Video course with templates</span></div><div class="price">Rs 2,200</div></div>
+<div class="receipt-row"><div class="name">Financial Modelling Template Pack<span class="desc">Ready-to-use Excel worksheets</span></div><div class="price">Rs 900</div></div>
+<div class="receipt-foot">paid via gumroad — instant download</div></div></div></section>
 
-  .hero-kicker{
-    font-family:'Caveat',cursive; font-size:20px; color:var(--forest); transform:rotate(-2deg);
-    display:inline-block; margin-bottom:2px; margin-left:6px;
-  }
-  @keyframes fadeup{ from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);} }
-  .hero h1{
-    font-family:'Fraunces',serif; font-weight:500; font-size:42px; line-height:1.14;
-    letter-spacing:-0.01em; max-width:560px; margin-left:6px;
-    animation:fadeup 0.6s ease forwards;
-  }
-  .highlight{position:relative; white-space:nowrap; display:inline-block;}
-  .highlight::before{
-    content:''; position:absolute; left:-6px; right:-6px; top:0.32em; bottom:0.1em;
-    background:var(--mustard); opacity:0.7; border-radius:2px 8px 3px 6px/4px 3px 8px 2px;
-    transform-origin:left center; transform:scaleX(0) rotate(-1deg);
-    animation:markstroke 0.8s cubic-bezier(.5,0,.2,1) forwards 0.75s;
-  }
-  @keyframes markstroke{ to{transform:scaleX(1) rotate(-1deg);} }
-  .pencil-tip{
-    position:absolute; right:-30px; top:-16px; width:30px; opacity:0;
-    animation:pencilpop 0.3s ease forwards 1.5s;
-  }
-  @keyframes pencilpop{ from{opacity:0; transform:rotate(38deg) translate(8px,-8px);} to{opacity:1; transform:rotate(38deg) translate(0,0);} }
-
-  .hero p{font-size:15.5px; color:var(--ink-soft); max-width:420px; margin-top:18px; margin-left:6px;}
-  .hero-cta{display:flex; gap:16px; margin-top:26px; margin-left:6px; align-items:center; flex-wrap:wrap;}
-  .btn{
-    padding:12px 22px; font-size:14px; font-weight:500; font-family:'Space Mono',monospace;
-    display:inline-block; border:1.5px solid var(--ink); transition:all 0.2s ease;
-  }
-  .btn-primary{background:var(--rust); color:var(--paper); border-color:var(--rust);}
-  .btn-primary:hover{background:var(--ink); border-color:var(--ink); transform:translateY(-2px);}
-  .btn-secondary{color:var(--ink); background:transparent;}
-  .btn-secondary:hover{background:var(--ink); color:var(--paper); transform:translateY(-2px);}
-
-  /* hero video card — replaces the pin stat card */
-  .video-card{
-    background:var(--paper-deep); border:1.5px solid var(--ink); padding:14px; transform:rotate(-2deg);
-    box-shadow:6px 8px 0 rgba(26,22,16,0.1); position:relative;
-    animation:pinin 0.5s cubic-bezier(.34,1.56,.64,1) forwards 0.5s; opacity:0;
-  }
-  @keyframes pinin{ from{opacity:0; transform:rotate(-2deg) translateY(-12px);} to{opacity:1; transform:rotate(-2deg) translateY(0);} }
-  .video-card::before{
-    content:''; position:absolute; top:-9px; left:26px; width:30px; height:15px;
-    background:var(--coral); opacity:0.9; transform:rotate(-3deg);
-  }
-  .video-thumb{
-    aspect-ratio:16/10; background-color:var(--forest);
-    background-image:repeating-linear-gradient(115deg, #0e5c3b, #0e5c3b 2px, #14724a 2px, #14724a 4px);
-    display:flex; align-items:center; justify-content:center; position:relative; cursor:pointer;
-  }
-  .video-play{
-    width:56px; height:56px; border-radius:50%; background:var(--paper); display:flex; align-items:center;
-    justify-content:center; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:transform 0.2s ease;
-  }
-  .video-thumb:hover .video-play{transform:scale(1.08);}
-  .video-play .tri{
-    width:0; height:0; border-top:10px solid transparent; border-bottom:10px solid transparent;
-    border-left:16px solid var(--rust); margin-left:4px;
-  }
-  .video-caption{
-    display:flex; justify-content:space-between; align-items:baseline; padding-top:12px;
-  }
-  .video-caption .t{font-family:'Fraunces',serif; font-size:15px; font-weight:500;}
-  .video-caption .d{font-family:'Space Mono',monospace; font-size:11px; color:var(--ink-soft);}
-
-  /* SECTION generic */
-  .section{padding:64px 0;}
-  .section + .section{border-top:2px solid var(--ink);}
-  .section-title-row{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px;}
-  .section-title-row h2{font-family:'Fraunces',serif; font-size:30px; font-weight:500;}
-  .viewall{font-size:13px; font-family:'Space Mono',monospace; color:var(--forest); border-bottom:1px solid var(--forest);}
-  .section-sub{font-family:'Caveat',cursive; font-size:19px; color:var(--ink-soft); margin-bottom:2px; transform:rotate(-1deg); display:inline-block;}
-
-  /* EXPLORE */
-  .explore-grid{display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:26px; margin-top:34px;}
-  .clip-card{
-    background:var(--paper-deep); border:1.5px dashed var(--ink-soft); padding:26px 24px 24px;
-    position:relative; transition:transform 0.2s ease;
-  }
-  .clip-card:nth-child(1){transform:rotate(-0.6deg);}
-  .clip-card:nth-child(2){transform:rotate(0.5deg);}
-  .clip-card:nth-child(3){transform:rotate(-0.3deg);}
-  .clip-card:hover{transform:rotate(0deg) translateY(-3px);}
-  .clip-card::before{
-    content:''; position:absolute; top:-9px; left:22px; width:26px; height:14px;
-    background:var(--mustard); opacity:0.9; transform:rotate(-4deg);
-  }
-  .card-type{
-    font-family:'Space Mono',monospace; font-size:11px; margin-bottom:12px; display:inline-block;
-    padding:3px 9px; background:var(--rust); color:var(--paper);
-  }
-  .card-type.finance{background:var(--forest);}
-  .card-type.tech{background:var(--sky);}
-  .card-title{font-family:'Fraunces',serif; font-size:20px; font-weight:500; line-height:1.3; margin-bottom:10px;}
-  .card-title.lg{font-size:25px;}
-  .card-excerpt{font-size:13.5px; color:var(--ink-soft);}
-
-  /* LEARN */
-  .index-list{margin-top:34px;}
-  .index-row{
-    display:grid; grid-template-columns:auto 1fr auto; align-items:baseline; gap:14px;
-    padding:20px 0; border-top:1px solid var(--line); cursor:pointer;
-  }
-  .index-row:last-child{border-bottom:1px solid var(--line);}
-  .index-num{font-family:'Space Mono',monospace; font-size:13px; color:var(--rust); align-self:start; padding-top:6px;}
-  .index-title-wrap{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
-  .index-track{
-    font-family:'Space Mono',monospace; font-size:10.5px; padding:3px 8px; color:var(--paper);
-  }
-  .index-row:nth-child(1) .index-track{background:var(--forest);}
-  .index-row:nth-child(2) .index-track{background:var(--sky);}
-  .index-row:nth-child(3) .index-track{background:var(--rust);}
-  .index-name{font-family:'Fraunces',serif; font-size:22px; font-weight:500;}
-  .index-desc{font-size:13.5px; color:var(--ink-soft); margin-top:6px; max-width:520px;}
-  .index-meta{font-family:'Space Mono',monospace; font-size:12px; color:var(--ink-soft); white-space:nowrap;}
-
-  /* YOUTUBE */
-  .yt-strip{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:34px;}
-  .yt-thumb{
-    aspect-ratio:16/10; background-color:var(--forest);
-    background-image:repeating-linear-gradient(115deg, #0e5c3b, #0e5c3b 2px, #14724a 2px, #14724a 4px);
-    position:relative; display:flex; align-items:center; justify-content:center; border:2px solid var(--ink);
-  }
-  .yt-thumb .play{
-    width:0; height:0; border-top:11px solid transparent; border-bottom:11px solid transparent;
-    border-left:17px solid var(--paper); margin-left:5px; filter:drop-shadow(0 1px 2px rgba(0,0,0,0.4));
-  }
-  .yt-card-title{font-size:13.5px; font-weight:500; margin-top:10px; line-height:1.4;}
-  .yt-tag{font-family:'Space Mono',monospace; font-size:10.5px; color:var(--rust); margin-top:4px;}
-
-  /* ACADEMY */
-  .academy-section{background:var(--ink); color:var(--paper);}
-  .academy-inner{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
-  .academy-stamp{
-    display:inline-block; font-family:'Space Mono',monospace; font-size:11px; color:var(--ink);
-    background:var(--mustard); padding:5px 12px; transform:rotate(-3deg); margin-bottom:20px;
-  }
-  .academy-inner h2{font-family:'Fraunces',serif; font-size:36px; font-weight:500; line-height:1.15;}
-  .academy-inner h2 em{color:var(--mustard); font-style:italic;}
-  .academy-inner p{font-size:15px; color:#C6BFA9; margin-top:18px; max-width:400px;}
-  .academy-btn{
-    margin-top:28px; display:inline-block; padding:13px 26px; background:var(--rust);
-    color:var(--paper); font-family:'Space Mono',monospace; font-size:14px; border:1.5px solid var(--rust);
-    transition:all 0.2s ease;
-  }
-  .academy-btn:hover{background:transparent; color:var(--rust); transform:translateY(-2px);}
-
-  .receipt{
-    background:var(--paper); color:var(--ink); padding:28px 26px; transform:rotate(1deg);
-    box-shadow:0 14px 30px rgba(0,0,0,0.35); font-family:'Space Mono',monospace; font-size:13px;
-    background-image:repeating-linear-gradient(var(--paper), var(--paper) 33px, var(--line) 34px);
-  }
-  .receipt-head{
-    font-family:'Fraunces',serif; font-style:italic; font-size:16px; font-weight:500;
-    border-bottom:1.5px dashed var(--ink); padding-bottom:10px; margin-bottom:6px;
-  }
-  .receipt-row{display:flex; justify-content:space-between; padding:8px 0; align-items:flex-start; gap:12px;}
-  .receipt-row .name{max-width:230px;}
-  .receipt-row .desc{display:block; font-family:'Inter',sans-serif; font-size:11.5px; color:var(--ink-soft); margin-top:2px;}
-  .receipt-row .price{color:var(--rust); white-space:nowrap; font-weight:700;}
-  .receipt-foot{border-top:1.5px dashed var(--ink); margin-top:8px; padding-top:10px; font-size:11px; color:var(--ink-soft); text-align:center;}
-
-  /* FEED */
-  .feed-filter{display:flex; gap:0; margin-bottom:8px; flex-wrap:wrap; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);}
-  .feed-pill{font-family:'Space Mono',monospace; font-size:12px; padding:10px 18px; color:var(--ink-soft); border-right:1px solid var(--line); cursor:pointer;}
-  .feed-pill.active{background:var(--rust); color:var(--paper);}
-  .feed-row{
-    display:grid; grid-template-columns:76px 90px 1fr; gap:18px; align-items:baseline;
-    padding:17px 0; border-bottom:1px solid var(--line); font-size:14.5px;
-  }
-  .feed-date{font-family:'Space Mono',monospace; color:var(--ink-soft); font-size:12px;}
-  .feed-badge{font-family:'Space Mono',monospace; font-size:11px; padding:2px 8px; color:var(--paper); background:var(--rust); display:inline-block;}
-  .feed-badge.lesson{background:var(--forest);}
-  .feed-badge.resource{background:var(--mustard); color:var(--ink);}
-  .feed-title{font-family:'Fraunces',serif; font-weight:500; font-size:17px;}
-
-  footer{padding:36px 0; text-align:center; font-family:'Space Mono',monospace; font-size:11.5px; color:var(--ink-soft); border-top:2px solid var(--ink);}
-</style>
-</head>
-<body>
-<div class="grain"></div>
-
-<nav>
-  <div class="wrap">
-    <div class="logo-block">
-      <div class="logo">
-        <svg class="logo-loop" viewBox="0 0 34 20" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/>
-        </svg>
-        learn for infinity
-      </div>
-      <svg class="logo-underline" viewBox="0 0 212 8" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2,5 C50,2 160,2 210,5"/>
-      </svg>
-      <div class="logo-tagline">business · finance · technology</div>
-    </div>
-    <div class="tabs">
-      <div class="tab">explore</div>
-      <div class="tab">learn</div>
-      <div class="tab">academy</div>
-      <div class="tab">youtube</div>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-margin"></div>
-  <div class="wrap">
-    <div class="hero-inner">
-      <div>
-        <div class="hero-kicker">business, finance & technology —</div>
-        <h1>Learn what's happening.<br><span class="highlight">Understand how it works.<svg class="pencil-tip" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><rect x="13" y="2" width="6" height="20" fill="#1A1610" transform="rotate(0)"/><polygon points="13,22 19,22 16,29" fill="#D6420F"/><rect x="13" y="2" width="6" height="4" fill="#F0A202"/></svg></span><br>Go further.</h1>
-        <p>Insights on the business world, learning series that start from zero, and resources for when you're ready to go deeper.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#">explore insights →</a>
-          <a class="btn btn-secondary" href="#">start learning</a>
-        </div>
-      </div>
-      <div class="video-card">
-        <div class="video-thumb">
-          <!-- swap this block for a real <iframe> embed of the intro video -->
-          <div class="video-play"><div class="tri"></div></div>
-        </div>
-        <div class="video-caption">
-          <span class="t">meet learn for infinity</span>
-          <span class="d">1:32</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section class="section" id="explore">
-  <div class="wrap">
-    <div class="section-title-row">
-      <div>
-        <span class="section-sub">what's happening —</span>
-        <h2>Explore</h2>
-      </div>
-      <a class="viewall" href="#">view all insights</a>
-    </div>
-    <div class="explore-grid">
-      <div class="clip-card">
-        <div class="card-type">business</div>
-        <div class="card-title lg">Why companies fail despite having good products</div>
-        <div class="card-excerpt">A good product isn't enough. Here's what actually separates businesses that survive from ones that don't — with three real examples.</div>
-      </div>
-      <div class="clip-card">
-        <div class="card-type finance">finance</div>
-        <div class="card-title">What IFRS 18 changes, explained simply</div>
-        <div class="card-excerpt">The new standard reshapes how income statements look. Here's what's actually different.</div>
-      </div>
-      <div class="clip-card">
-        <div class="card-type tech">technology</div>
-        <div class="card-title">What is an AI agent, really?</div>
-        <div class="card-excerpt">Not just a chatbot. A plain explanation of what agents do differently.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="learn">
-  <div class="wrap">
-    <div class="section-title-row">
-      <div>
-        <span class="section-sub">start from zero —</span>
-        <h2>Learn</h2>
-      </div>
-      <a class="viewall" href="#">browse all series</a>
-    </div>
-    <div class="index-list">
-      <div class="index-row">
-        <div class="index-num">01</div>
-        <div>
-          <div class="index-title-wrap">
-            <span class="index-track">accounting</span>
-            <span class="index-name">Accounting Fundamentals</span>
-          </div>
-          <div class="index-desc">Start from zero and build a solid foundation — from what accounting is to reading financial statements.</div>
-        </div>
-        <div class="index-meta">10 lessons →</div>
-      </div>
-      <div class="index-row">
-        <div class="index-num">02</div>
-        <div>
-          <div class="index-title-wrap">
-            <span class="index-track">finance</span>
-            <span class="index-name">Financial Statement Analysis</span>
-          </div>
-          <div class="index-desc">Learn how to actually read and interpret a company's financials.</div>
-        </div>
-        <div class="index-meta">8 lessons →</div>
-      </div>
-      <div class="index-row">
-        <div class="index-num">03</div>
-        <div>
-          <div class="index-title-wrap">
-            <span class="index-track">technology</span>
-            <span class="index-name">Power BI for Beginners</span>
-          </div>
-          <div class="index-desc">From raw data to useful business insight, one dashboard at a time.</div>
-        </div>
-        <div class="index-meta">12 lessons →</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="youtube">
-  <div class="wrap">
-    <div class="section-title-row">
-      <div>
-        <span class="section-sub">on screen —</span>
-        <h2>From YouTube</h2>
-      </div>
-      <a class="viewall" href="#">watch on youtube</a>
-    </div>
-    <div class="yt-strip">
-      <div class="yt-card">
-        <div class="yt-thumb"><div class="play"></div></div>
-        <div class="yt-card-title">Debit and credit, explained with real transactions</div>
-        <div class="yt-tag">12:04 — accounting fundamentals</div>
-      </div>
-      <div class="yt-card">
-        <div class="yt-thumb"><div class="play"></div></div>
-        <div class="yt-card-title">Reading a balance sheet in 10 minutes</div>
-        <div class="yt-tag">10:41 — financial statement analysis</div>
-      </div>
-      <div class="yt-card">
-        <div class="yt-thumb"><div class="play"></div></div>
-        <div class="yt-card-title">Pakistan's new tax reforms, explained</div>
-        <div class="yt-tag">08:57 — explore</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="academy-section">
-  <div class="wrap academy-inner">
-    <div>
-      <div class="academy-stamp">members only</div>
-      <h2>Go beyond <em>free</em> content.</h2>
-      <p>Structured courses, textbooks, study packs and templates — for when you want to master a subject, not just understand it.</p>
-      <a class="academy-btn" href="#">explore academy →</a>
-    </div>
-    <div class="receipt">
-      <div class="receipt-head">learn for infinity academy</div>
-      <div class="receipt-row">
-        <div class="name">Financial Accounting Study Pack
-          <span class="desc">PDF textbook, MCQs, revision notes</span>
-        </div>
-        <div class="price">Rs 1,500</div>
-      </div>
-      <div class="receipt-row">
-        <div class="name">Power BI for Business — Full Course
-          <span class="desc">Video course with templates</span>
-        </div>
-        <div class="price">Rs 2,200</div>
-      </div>
-      <div class="receipt-row">
-        <div class="name">Financial Modelling Template Pack
-          <span class="desc">Ready-to-use Excel worksheets</span>
-        </div>
-        <div class="price">Rs 900</div>
-      </div>
-      <div class="receipt-foot">paid via gumroad — instant download</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="latest">
-  <div class="wrap">
-    <div class="section-title-row" style="margin-bottom:20px;">
-      <div>
-        <span class="section-sub">everything, together —</span>
-        <h2>Latest from Learn for Infinity</h2>
-      </div>
-    </div>
-    <div class="feed-filter">
-      <div class="feed-pill active">all</div>
-      <div class="feed-pill">business</div>
-      <div class="feed-pill">finance</div>
-      <div class="feed-pill">technology</div>
-      <div class="feed-pill">learning</div>
-    </div>
-    <div class="feed-list">
-      <div class="feed-row">
-        <div class="feed-date">sep 6</div>
-        <div class="feed-badge">insight</div>
-        <div class="feed-title">Why interest rates affect businesses more than they realise</div>
-      </div>
-      <div class="feed-row">
-        <div class="feed-date">sep 4</div>
-        <div class="feed-badge lesson">lesson</div>
-        <div class="feed-title">Journal entries — Accounting Fundamentals, lesson 6</div>
-      </div>
-      <div class="feed-row">
-        <div class="feed-date">sep 2</div>
-        <div class="feed-badge">insight</div>
-        <div class="feed-title">How subscription businesses actually make money</div>
-      </div>
-      <div class="feed-row">
-        <div class="feed-date">aug 30</div>
-        <div class="feed-badge resource">resource</div>
-        <div class="feed-title">New: Financial Modelling Template Pack now available</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>learn for infinity — business, finance and technology, explained.</footer>
-
-</body>
-</html>
+<section class="section"><div class="wrap">
+<div class="section-title-row" style="margin-bottom:20px"><div><span class="section-sub">everything, together —</span><h2>Latest from Learn for Infinity</h2></div></div>
+<div class="feed-filter"><div class="feed-pill active">all</div><div class="feed-pill">business</div><div class="feed-pill">finance</div><div class="feed-pill">technology</div><div class="feed-pill">learning</div></div>
+<div class="feed-row"><div class="feed-date">sep 6</div><div class="feed-badge">insight</div><div class="feed-title">Why interest rates affect businesses more than they realise</div></div>
+<div class="feed-row"><div class="feed-date">sep 4</div><div class="feed-badge lesson">lesson</div><div class="feed-title">Journal entries — Accounting Fundamentals, lesson 6</div></div>
+<div class="feed-row"><div class="feed-date">sep 2</div><div class="feed-badge">insight</div><div class="feed-title">How subscription businesses actually make money</div></div>
+<div class="feed-row"><div class="feed-date">aug 30</div><div class="feed-badge resource">resource</div><div class="feed-title">New: Financial Modelling Template Pack now available</div></div>
+</div></section>
+</main>
+<footer><div style="margin-bottom:10px"><a href="index.html">home</a><a href="explore.html">explore</a><a href="learn.html">learn</a><a href="academy.html">academy</a><a href="youtube.html">youtube</a></div>learn for infinity — business, finance and technology, explained.</footer>
+<script src="script.js"></script>
+</body></html>
