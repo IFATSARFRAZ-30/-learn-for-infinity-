@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Why interest rates affect businesses more than they realise — Learn for Infinity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css"></head>
+<body><div class="grain"></div><canvas id="trail"></canvas>
+<nav><div class="wrap">
+<a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
+<svg class="logo-underline" viewBox="0 0 212 8"><path d="M2,5 C50,2 160,2 210,5"/></svg>
+<div class="logo-tagline">business · finance · technology</div></a>
+<div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../learn.html">learn</a><a class="tab" href="../academy.html">academy</a><a class="tab" href="../videos.html">videos</a></div>
+</div></nav>
+<div id="prog"></div><main class="page active"><header class="page-head"><div class="wrap"><svg class="art pg" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g class="rot"><circle cx="60" cy="45" r="22" fill="none" stroke="#D6420F" stroke-width="16" stroke-dasharray="55 83.2"/><circle cx="60" cy="45" r="22" fill="none" stroke="#F0A202" stroke-width="16" stroke-dasharray="40 98.2" stroke-dashoffset="-55"/><circle cx="60" cy="45" r="22" fill="none" stroke="#1F6FB2" stroke-width="16" stroke-dasharray="43.2 95" stroke-dashoffset="-95"/></g><circle class="spark" cx="104" cy="16" r="4" fill="#127A4F"/><circle class="spark s2" cx="14" cy="76" r="3" fill="#E85D4C"/></svg><span class="section-sub">business —</span><h1>Why interest rates affect businesses more than they realise</h1><p>Drag the rate and watch profit disappear. · 5 min read · interactive</p></div></header><div class="wrap page-body"><article class="article-body">
+<p class="reveal big-q">A few points on an interest rate can turn a <mark>profitable</mark> company into a struggling one.</p>
+<p class="reveal">Imagine a company that earns an operating profit (EBIT) before paying interest. The more it borrows and the higher the rate, the bigger the bite. All figures are in Rs million.</p>
+<div class="calc reveal"><div class="calc-grid">
+<div><label>Operating profit (EBIT) <b id="ve"></b></label><input type="range" id="e" min="5" max="40" value="15"></div>
+<div><label>Loans <b id="vd1"></b></label><input type="range" id="d" min="10" max="100" step="5" value="50"></div>
+<div style="grid-column:1/-1"><label>Interest rate <b id="vr"></b></label><input type="range" id="r" min="5" max="30" value="12"></div></div>
+<div class="stats"><div class="stat"><b id="si">–</b><span>interest per year</span></div><div class="stat"><b id="sb">–</b><span>profit before tax</span></div><div class="stat"><b id="sc">–</b><span>interest cover (EBIT ÷ interest)</span></div></div>
+<div class="bars"><div id="b1" style="background:var(--forest)"></div><div id="b2" style="background:var(--rust)"></div></div><div class="verdict" id="vd"></div></div>
+<h2 class="reveal">The ripple effect</h2>
+<ul class="take"><li class="reveal">1. Loans cost more, so profit shrinks.</li><li class="reveal">2. Customers who borrow (for homes, cars, stock) buy less.</li><li class="reveal">3. Businesses postpone expansion because new projects must beat a higher hurdle.</li><li class="reveal">4. Weak firms struggle to refinance, and some fail.</li></ul>
+<h2 class="reveal">Test yourself</h2>
+<div class="quiz reveal"><p>A firm has Rs 50m of loans. The rate rises from 10% to 20%. How much more interest does it pay each year?</p>
+<button class="opt" data-r="1">A. Rs 5m more (from Rs 5m to Rs 10m)</button><button class="opt" data-r="0">B. Rs 10m more</button><button class="opt" data-r="0">C. No change</button>
+<div class="why"><b>A.</b> 50 × 10% = 5 and 50 × 20% = 10, so the cost doubles.</div></div></article><p style="margin-top:30px"><a class="btn btn-secondary" href="../explore.html">← back to explore</a></p></div></main><script>(function(){const g=i=>document.getElementById(i);
+function c(){const e=+g('e').value,d=+g('d').value,r=+g('r').value/100,i=d*r,p=e-i,cv=e/i,m=Math.max(e,i);
+g('ve').textContent='Rs '+e+'m';g('vd1').textContent='Rs '+d+'m';g('vr').textContent=Math.round(r*100)+'%';
+g('si').textContent='Rs '+i.toFixed(1)+'m';g('sb').textContent=(p<0?'-':'')+'Rs '+Math.abs(p).toFixed(1)+'m';g('sc').textContent=cv.toFixed(1)+'×';
+g('b1').style.width=Math.max(e/m*100,14)+'%';g('b1').textContent='EBIT '+e+'m';g('b2').style.width=Math.max(i/m*100,14)+'%';g('b2').textContent='interest '+i.toFixed(1)+'m';
+const v=g('vd');v.textContent=cv>=3?'✓ comfortable':cv>=1.5?'~ watch it closely':'✗ danger zone: interest is eating the profit';v.style.color=cv>=3?'var(--forest)':cv>=1.5?'#b07800':'var(--rust)'}
+document.querySelectorAll('.calc input').forEach(x=>x.oninput=c);c();})();</script>
+<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../learn.html">learn</a><a href="../academy.html">academy</a><a href="../videos.html">videos</a></div>learn for infinity — business, finance and technology, explained.</footer>
+<script src="../script.js"></script>
+</body></html>
