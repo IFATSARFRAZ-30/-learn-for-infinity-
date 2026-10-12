@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Why starting early beats saving more — Learn for Infinity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css"></head>
+<body><div class="grain"></div><canvas id="trail"></canvas>
+<nav><div class="wrap">
+<a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
+<svg class="logo-underline" viewBox="0 0 212 8"><path d="M2,5 C50,2 160,2 210,5"/></svg>
+<div class="logo-tagline">business · finance · technology</div></a>
+<div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../learn.html">learn</a><a class="tab" href="../academy.html">academy</a><a class="tab" href="../videos.html">videos</a></div>
+</div></nav>
+<div id="prog"></div><main class="page active"><header class="page-head"><div class="wrap"><svg class="art pg" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="82" rx="26" ry="5" fill="#1A1610" opacity=".15"/><g class="float"><g class="coin"><circle cx="60" cy="42" r="26" fill="#F0A202" stroke="#1A1610" stroke-width="3"/><circle cx="60" cy="42" r="19" fill="none" stroke="#1A1610" stroke-width="1.5" stroke-dasharray="3 3"/><text x="60" y="49" text-anchor="middle" font-family="Space Mono,monospace" font-weight="700" font-size="20" fill="#1A1610">Rs</text></g></g><circle class="spark" cx="100" cy="20" r="4" fill="#E85D4C"/><circle class="spark s2" cx="18" cy="30" r="3" fill="#1F6FB2"/></svg><span class="section-sub">finance —</span><h1>Why starting early beats saving more</h1><p>Compound growth, with a slider you can break. · 4 min read · interactive</p></div></header><div class="wrap page-body"><article class="article-body">
+<p class="reveal big-q">Two people save the same amount every month. One starts <mark>10 years later</mark>. The gap is bigger than you'd guess.</p>
+<p class="reveal">With compounding, your earnings earn their own earnings. The longer that snowball rolls, the faster it grows. Set your numbers (savings run until age 60):</p>
+<div class="calc reveal"><div class="calc-grid">
+<div><label>Saved per month <b id="vm"></b></label><input type="range" id="m" min="1000" max="50000" step="1000" value="10000"></div>
+<div><label>Assumed yearly return <b id="vr"></b></label><input type="range" id="r" min="4" max="18" value="10"></div>
+<div style="grid-column:1/-1"><label>You start at age <b id="va"></b></label><input type="range" id="a" min="20" max="45" value="25"></div></div>
+<div class="bars"><div id="b1" style="background:var(--forest)"></div><div id="b2" style="background:var(--coral)"></div></div>
+<div class="stats"><div class="stat"><b id="s1">–</b><span>you put in</span></div><div class="stat"><b id="s2">–</b><span>growth did the rest</span></div><div class="stat"><b id="s3">–</b><span>cost of waiting 10 years</span></div></div>
+<div class="verdict" id="vd"></div></div>
+<p class="reveal"><b>Rule of 72:</b> divide 72 by the yearly return to estimate how many years money takes to double. At 10%, about 7 years.</p>
+<p class="reveal" style="font-size:15px;color:var(--ink-soft)">This is an illustration with a steady assumed return. Real returns vary and can be negative, and this is not investment advice.</p>
+<h2 class="reveal">Remember this</h2><ul class="take"><li class="reveal">Time in the market beats amount saved, early on.</li><li class="reveal">Waiting costs more the higher the return.</li><li class="reveal">A small amount started now beats a big amount started later.</li></ul></article><p style="margin-top:30px"><a class="btn btn-secondary" href="../explore.html">← back to explore</a></p></div></main><script>(function(){const g=i=>document.getElementById(i);
+const R=n=>'Rs '+Math.round(n).toLocaleString('en-US');
+function fv(p,y,a){const i=y/1200,n=(60-a)*12;return p*(Math.pow(1+i,n)-1)/i}
+function c(){const p=+g('m').value,y=+g('r').value,a=+g('a').value,x=fv(p,y,a),w=fv(p,y,a+10),inn=p*(60-a)*12;
+g('vm').textContent=R(p);g('vr').textContent=y+'%';g('va').textContent=a;
+g('b1').style.width='100%';g('b1').textContent='start at '+a+': '+R(x);g('b2').style.width=Math.max(w/x*100,14)+'%';g('b2').textContent='start at '+(a+10)+': '+R(w);
+g('s1').textContent=R(inn);g('s2').textContent=R(x-inn);g('s3').textContent=R(x-w);g('vd').textContent='Waiting 10 years costs about '+Math.round((1-w/x)*100)+'% of the final pot.'}
+document.querySelectorAll('.calc input').forEach(x=>x.oninput=c);c();})();</script>
+<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../learn.html">learn</a><a href="../academy.html">academy</a><a href="../videos.html">videos</a></div>learn for infinity — business, finance and technology, explained.</footer>
+<script src="../script.js"></script>
+</body></html>
