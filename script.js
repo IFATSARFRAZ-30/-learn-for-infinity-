@@ -14,3 +14,9 @@ document.addEventListener('pointermove',e=>{if(down){add(e.clientX+(Math.random(
 function draw(){raf=0;const n=performance.now();pts=pts.filter(p=>n-p.t<LIFE);cx.clearRect(0,0,W,H);cx.lineCap='round';cx.lineJoin='round';
 for(let i=1;i<pts.length;i++){const a=pts[i-1],b=pts[i];if(b.br)continue;const al=Math.max(0,1-(n-b.t)/LIFE);cx.globalAlpha=al;cx.strokeStyle=b.c;cx.lineWidth=3+3*al;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}
 if(pts.length)raf=requestAnimationFrame(draw)}
+document.addEventListener('click',e=>{const c=e.target.closest('[data-href]');if(c&&!e.target.closest('a'))location.href=c.dataset.href});
+(function(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+const pg=document.getElementById('prog');if(pg)addEventListener('scroll',()=>{const h=document.documentElement;pg.style.width=h.scrollTop/(h.scrollHeight-h.clientHeight)*100+'%'});
+document.querySelectorAll('.quiz').forEach(q=>q.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{q.querySelectorAll('.opt').forEach(x=>x.className='opt'+(x.dataset.r==='1'?' right':''));if(b.dataset.r!=='1')b.className='opt wrong';const w=q.querySelector('.why');if(w)w.style.display='block'}));
+document.querySelectorAll('.flip').forEach(f=>f.onclick=()=>f.classList.toggle('on'))})();
