@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>How subscription businesses actually make money — Learn for Infinity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css"></head>
+<body><div class="grain"></div><canvas id="trail"></canvas>
+<nav><div class="wrap">
+<a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
+<svg class="logo-underline" viewBox="0 0 212 8"><path d="M2,5 C50,2 160,2 210,5"/></svg>
+<div class="logo-tagline">business · finance · technology</div></a>
+<div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../learn.html">learn</a><a class="tab" href="../academy.html">academy</a><a class="tab" href="../videos.html">videos</a></div>
+</div></nav>
+<div id="prog"></div><main class="page active"><header class="page-head"><div class="wrap"><svg class="art pg" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="82" rx="26" ry="5" fill="#1A1610" opacity=".15"/><g class="float"><g class="coin"><circle cx="60" cy="42" r="26" fill="#F0A202" stroke="#1A1610" stroke-width="3"/><circle cx="60" cy="42" r="19" fill="none" stroke="#1A1610" stroke-width="1.5" stroke-dasharray="3 3"/><text x="60" y="49" text-anchor="middle" font-family="Space Mono,monospace" font-weight="700" font-size="20" fill="#1A1610">Rs</text></g></g><circle class="spark" cx="100" cy="20" r="4" fill="#E85D4C"/><circle class="spark s2" cx="18" cy="30" r="3" fill="#1F6FB2"/></svg><span class="section-sub">business —</span><h1>How subscription businesses actually make money</h1><p>Spoiler: the first month usually loses money. · 6 min read · interactive</p></div></header>
+<div class="wrap page-body"><article class="article-body">
+<p class="reveal big-q">You pay <mark>Rs 1,000</mark> a month for an app. Does the company make money from you?</p>
+<p class="reveal">Not at first. Meet <b>FitBox</b>, a made-up gym app. To get you to sign up it spent Rs 5,000 on ads. You pay Rs 1,000 a month and about 80% of that is left after running costs. So it needs <b>six months of you</b> just to get its ad money back. Everything depends on one question: <i>how long do customers stay?</i></p>
+<h2 class="reveal">Four numbers run the whole game</h2>
+<div class="reveal formula">Lifetime (months) = 1 ÷ churn<br>LTV = price × margin ÷ churn<br>Payback (months) = CAC ÷ (price × margin)</div>
+<p class="reveal"><b>Churn</b> is the share of customers who cancel each month. <b>LTV</b> is what a customer brings in over their whole stay. <b>CAC</b> is what it cost to win them. A common rule of thumb is that LTV should be at least 3× CAC. Now break FitBox yourself:</p>
+<div class="calc reveal">
+<div class="calc-grid">
+<div><label>Price per month <b id="vp"></b></label><input type="range" id="price" min="200" max="5000" step="100" value="1000"></div>
+<div><label>Monthly churn <b id="vc"></b></label><input type="range" id="churn" min="1" max="30" step="1" value="10"></div>
+<div><label>Margin <b id="vm"></b></label><input type="range" id="margin" min="30" max="95" step="5" value="80"></div>
+<div><label>Cost to win a customer (CAC) <b id="vk"></b></label><input type="range" id="cac" min="500" max="20000" step="500" value="5000"></div>
+</div>
+<div class="stats"><div class="stat"><b id="sl">–</b><span>average stay</span></div><div class="stat"><b id="sv">–</b><span>LTV ÷ CAC</span></div><div class="stat"><b id="sp">–</b><span>payback</span></div></div>
+<div class="bars"><div id="bc" style="background:var(--coral)"></div><div id="bl" style="background:var(--forest)"></div></div>
+<div class="verdict" id="vd"></div>
+<p style="font-size:15px;margin:18px 0 0">Watch 100 new customers month by month. Dots fade as people cancel.</p>
+<div class="dots" id="dots"></div>
+<div class="playbar"><button class="btn btn-primary" id="play">▶ play</button><input type="range" id="mo" min="0" max="24" value="0"><b id="mt" style="font-family:'Space Mono',monospace"></b></div>
+<p id="net" style="margin-top:10px;font-family:'Space Mono',monospace;font-size:14px"></p>
+</div>
+<h2 class="reveal">Test yourself</h2>
+<div class="reveal" id="quiz"><p>FitBox: price Rs 1,000, margin 80%, churn 10%, CAC Rs 5,000. That is LTV ÷ CAC of 1.6, which is weak. The founder can do <b>one</b> thing. Which helps LTV ÷ CAC more?</p>
+<button class="opt" data-r="1">A. Halve churn to 5% (better workouts, fewer cancellations)</button>
+<button class="opt" data-r="0">B. Cut CAC to Rs 3,500 (cheaper ads)</button>
+<div class="why" id="why"><b>A wins.</b> Halving churn doubles LTV to Rs 16,000, a 3.2× ratio. Cheaper ads only reach 2.3×. Keeping customers is usually worth more than finding new ones.</div></div>
+<h2 class="reveal">Remember this</h2>
+<ul class="take"><li class="reveal">Subscriptions are slow-burn: you lose money first and earn it back over time.</li><li class="reveal">Small changes in churn move LTV a lot, because it sits under the fraction.</li><li class="reveal">Healthy rule of thumb: LTV ≥ 3× CAC and payback under about 12 months.</li></ul>
+</article>
+<p style="margin-top:30px"><a class="btn btn-secondary" href="../explore.html">← back to explore</a></p></div></main>
+<script>(function(){
+const $=i=>document.getElementById(i),rs=n=>'Rs '+Math.round(n).toLocaleString('en-US');
+const dots=$('dots'),U=[];let sd=7;for(let i=0;i<100;i++){sd=(sd*9301+49297)%233280;U.push(sd/233280);dots.insertAdjacentHTML('beforeend','<i></i>')}
+function calc(){const p=+$('price').value,c=$('churn').value/100,m=$('margin').value/100,k=+$('cac').value,s=1-c;
+$('vp').textContent=rs(p);$('vc').textContent=Math.round(c*100)+'%';$('vm').textContent=Math.round(m*100)+'%';$('vk').textContent=rs(k);
+const ltv=p*m/c,r=ltv/k,pb=k/(p*m);
+$('sl').textContent=(1/c).toFixed(1)+' mo';$('sv').textContent=r.toFixed(1)+'×';$('sp').textContent=pb.toFixed(1)+' mo';
+const mx=Math.max(ltv,k);$('bc').style.width=Math.max(k/mx*100,12)+'%';$('bc').textContent='cost '+rs(k);$('bl').style.width=Math.max(ltv/mx*100,12)+'%';$('bl').textContent='earns '+rs(ltv);
+const v=$('vd');v.textContent=r>=3?'✓ healthy business':r>=1?'~ fragile: barely worth it':'✗ loses money on every customer';v.style.color=r>=3?'var(--forest)':r>=1?'#b07800':'var(--rust)';
+const mo=+$('mo').value,sm=Math.pow(s,mo);$('mt').textContent='month '+mo;
+dots.childNodes.forEach((d,i)=>d.classList.toggle('dead',U[i]>=sm));
+const net=p*m*(1-sm)/c-k;$('net').innerHTML=Math.round(sm*100)+' of 100 customers left · each new customer has earned back <b>'+rs(p*m*(1-sm)/c)+'</b> of the '+rs(k)+' it cost · '+(net>=0?'<span style="color:var(--forest)">in profit '+rs(net)+'</span>':'<span style="color:var(--rust)">still '+rs(-net)+' in the red</span>')}
+document.querySelectorAll('.calc input').forEach(e=>e.addEventListener('input',calc));calc();
+let tm=0;$('play').onclick=()=>{if(tm){clearInterval(tm);tm=0;$('play').textContent='▶ play';return}
+if(+$('mo').value>=24)$('mo').value=0;$('play').textContent='❚❚ pause';tm=setInterval(()=>{if(+$('mo').value>=24){clearInterval(tm);tm=0;$('play').textContent='▶ replay';return}$('mo').value=+$('mo').value+1;calc()},450)};
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{document.querySelectorAll('.opt').forEach(x=>x.className='opt'+(x.dataset.r==='1'?' right':''));if(b.dataset.r!=='1')b.className='opt wrong';$('why').style.display='block'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+addEventListener('scroll',()=>{const h=document.documentElement;$('prog').style.width=h.scrollTop/(h.scrollHeight-h.clientHeight)*100+'%'});
+})();</script>
+<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../learn.html">learn</a><a href="../academy.html">academy</a><a href="../videos.html">videos</a></div>learn for infinity — business, finance and technology, explained.</footer>
+<script src="../script.js"></script>
+</body></html>
