@@ -5,12 +5,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css"></head>
 <body><div class="grain"></div><canvas id="trail"></canvas>
-<nav><div class="wrap">
-<a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
+<nav class="topbar"><div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../news.html">news</a><a class="tab" href="../academy.html">academy</a></div></nav>
+<div class="brandbar compact"><a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
 <svg class="logo-underline" viewBox="0 0 212 8"><path d="M2,5 C50,2 160,2 210,5"/></svg>
-<div class="logo-tagline">business · finance · technology</div></a>
-<div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../learn.html">learn</a><a class="tab" href="../academy.html">academy</a><a class="tab" href="../videos.html">videos</a></div>
-</div></nav>
+<div class="logo-tagline">business · finance · technology</div></a></div>
 <div id="prog"></div><main class="page active"><header class="page-head"><div class="wrap"><svg class="art pg" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="82" rx="26" ry="5" fill="#1A1610" opacity=".15"/><g class="float"><g class="coin"><circle cx="60" cy="42" r="26" fill="#F0A202" stroke="#1A1610" stroke-width="3"/><circle cx="60" cy="42" r="19" fill="none" stroke="#1A1610" stroke-width="1.5" stroke-dasharray="3 3"/><text x="60" y="49" text-anchor="middle" font-family="Space Mono,monospace" font-weight="700" font-size="20" fill="#1A1610">Rs</text></g></g><circle class="spark" cx="100" cy="20" r="4" fill="#E85D4C"/><circle class="spark s2" cx="18" cy="30" r="3" fill="#1F6FB2"/></svg><span class="section-sub">business —</span><h1>How subscription businesses actually make money</h1><p>Spoiler: the first month usually loses money. · 6 min read · interactive</p></div></header>
 <div class="wrap page-body"><article class="article-body">
 <p class="reveal big-q">You pay <mark>Rs 1,000</mark> a month for an app. Does the company make money from you?</p>
@@ -61,6 +59,6 @@ document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{document.querySelect
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
 addEventListener('scroll',()=>{const h=document.documentElement;$('prog').style.width=h.scrollTop/(h.scrollHeight-h.clientHeight)*100+'%'});
 })();</script>
-<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../learn.html">learn</a><a href="../academy.html">academy</a><a href="../videos.html">videos</a></div>learn for infinity — business, finance and technology, explained.</footer>
+<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../news.html">news</a><a href="../academy.html">academy</a><a href="../psx.html">psx</a></div>learn for infinity — business, finance and technology, explained.</footer>
 <script src="../script.js"></script>
 </body></html>
