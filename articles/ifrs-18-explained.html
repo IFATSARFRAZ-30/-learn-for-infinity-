@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>What IFRS 18 changes, explained simply — Learn for Infinity</title>
+<html lang="en"><head><meta charset="UTF-8"><title>Article title — Learn for Infinity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css"></head>
 <body><div class="grain"></div><canvas id="trail"></canvas>
-<nav><div class="wrap">
-<a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
+<nav class="topbar"><div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../news.html">news</a><a class="tab" href="../academy.html">academy</a></div></nav>
+<div class="brandbar compact"><a class="logo-block" href="../index.html"><div class="logo"><svg class="logo-loop" viewBox="0 0 34 20"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
 <svg class="logo-underline" viewBox="0 0 212 8"><path d="M2,5 C50,2 160,2 210,5"/></svg>
-<div class="logo-tagline">business · finance · technology</div></a>
-<div class="tabs"><a class="tab active" href="../explore.html">explore</a><a class="tab" href="../learn.html">learn</a><a class="tab" href="../academy.html">academy</a><a class="tab" href="../videos.html">videos</a></div>
-</div></nav>
-<div id="prog"></div><main class="page active"><header class="page-head"><div class="wrap"><svg class="art pg" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M60 22Q36 12 12 20V72Q36 64 60 74Z" fill="#F6EFDC" stroke="#1A1610" stroke-width="3" stroke-linejoin="round"/><path d="M60 22Q84 12 108 20V72Q84 64 60 74Z" fill="#EDE0BE" stroke="#1A1610" stroke-width="3" stroke-linejoin="round"/><g stroke="#127A4F" stroke-width="3" stroke-linecap="round" fill="none"><path class="ln" d="M22 34Q38 30 50 36"/><path class="ln l2" d="M22 46Q38 42 50 48"/><path class="ln l3" d="M22 58Q38 54 50 60"/></g><g stroke="#D6420F" stroke-width="3" stroke-linecap="round" fill="none"><path class="ln l4" d="M70 36Q82 30 98 34"/><path class="ln l5" d="M70 48Q82 42 98 46"/><path class="ln l6" d="M70 60Q82 54 98 58"/></g></svg><span class="section-sub">finance —</span><h1>What IFRS 18 changes, explained simply</h1><p>The income statement gets sorted into clear boxes. Try sorting items yourself. · 5 min read · interactive</p></div></header><div class="wrap page-body"><article class="article-body">
-<p class="reveal big-q">Every company's income statement used to be a <mark>different shape</mark>. IFRS 18 fixes that.</p>
-<p class="reveal">IFRS 18 was issued in April 2024 and applies to annual periods starting on or after <b>1 January 2027</b>. It replaces IAS 1. Its goal is simple: make profit statements easier to compare. The big changes:</p>
-<ul class="take"><li class="reveal"><b>Three clear categories</b> in profit or loss: operating, investing and financing (plus income taxes).</li><li class="reveal"><b>New required subtotals</b>: operating profit, and profit before financing and income taxes.</li><li class="reveal"><b>Management-defined measures</b> (like "adjusted EBITDA") must be explained and reconciled in the notes.</li></ul>
-<h2 class="reveal">The new layout</h2>
-<div class="stmt reveal"><div class="c-op">Revenue · cost of sales · operating expenses</div><div class="sub c-op">= Operating profit</div><div class="c-inv">Investing: interest and dividends earned, gains on investments</div><div class="sub c-inv">= Profit before financing and income taxes</div><div class="c-fin">Financing: interest on borrowings</div><div class="c-tax">Income taxes</div><div class="sub">= Profit for the year</div></div>
-<h2 class="reveal">Sort it yourself</h2>
-<p class="reveal">For a typical company (banks and insurers follow special rules), which category does each item land in?</p>
-<div class="calc reveal"><div class="gq" id="gq"></div><div id="gb"><button class="btn btn-secondary" data-k="op">Operating</button> <button class="btn btn-secondary" data-k="inv">Investing</button> <button class="btn btn-secondary" data-k="fin">Financing</button> <button class="btn btn-secondary" data-k="tax">Income taxes</button></div><div class="verdict" id="gf"></div></div>
-<p class="reveal">Operating is the leftover box: anything that isn't investing, financing or tax goes there. That makes the first subtotal consistent across companies.</p></article><p style="margin-top:30px"><a class="btn btn-secondary" href="../explore.html">← back to explore</a></p></div></main><script>(function(){const g=i=>document.getElementById(i);
-const it=[["Sales revenue","op"],["Factory wages","op"],["Interest on a bank loan","fin"],["Interest earned on deposits","inv"],["Dividends from shares you hold","inv"],["Corporate income tax","tax"]],nm={op:'Operating',inv:'Investing',fin:'Financing',tax:'Income taxes'};let i=0,sc=0;
-function sh(){if(i>=it.length){g('gq').textContent='Score: '+sc+' / '+it.length;g('gb').style.display='none';g('gf').textContent=sc>=5?'Nice, you have got it!':'Re-read the box above and try again (refresh)';return}g('gq').textContent=it[i][0];g('gf').textContent=''}
-g('gb').onclick=e=>{const k=e.target.dataset.k;if(!k||i>=it.length)return;const ok=k===it[i][1];if(ok)sc++;g('gf').textContent=ok?'✓ Correct':'✗ It belongs in: '+nm[it[i][1]];g('gf').style.color=ok?'var(--forest)':'var(--rust)';i++;setTimeout(sh,900)};sh();})();</script>
-<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../learn.html">learn</a><a href="../academy.html">academy</a><a href="../videos.html">videos</a></div>learn for infinity — business, finance and technology, explained.</footer>
+<div class="logo-tagline">business · finance · technology</div></a></div>
+<main class="page active"><header class="page-head"><div class="wrap"><span class="section-sub">business —</span><h1>Article title goes here</h1><p>One-line summary · 6 min read · 1 Oct 2026</p></div></header>
+<div class="wrap page-body"><article class="article-body">
+<p>Write your opening paragraph here.</p>
+<h2>A section heading</h2>
+<p>More text. Copy this file, rename it (e.g. why-companies-fail.html) and replace the text.</p>
+<blockquote>A highlighted quote or key idea.</blockquote>
+<ul><li>A bullet point</li><li>Another bullet point</li></ul>
+</article>
+<p style="margin-top:30px"><a class="btn btn-secondary" href="../explore.html">← back to explore</a></p></div></main>
+<footer><div style="margin-bottom:10px"><a href="../index.html">home</a><a href="../explore.html">explore</a><a href="../news.html">news</a><a href="../academy.html">academy</a><a href="../psx.html">psx</a></div>learn for infinity — business, finance and technology, explained.</footer>
 <script src="../script.js"></script>
 </body></html>
