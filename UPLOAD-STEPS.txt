@@ -1,0 +1,21 @@
+LEARN FOR INFINITY: NEW PAGES
+
+WHAT IS IN THIS FOLDER
+  index.html, explore.html, news.html, academy.html   replace the 4 files with the same names in your repo
+  data.js                                             NEW: all articles, news, courses and videos live here
+  site.css, site.js                                   NEW: shared styles and script for the 4 pages
+  images/small/                                       NEW: lighter copies of your pictures (about 0.8 MB in total)
+
+DO NOT DELETE ANYTHING ELSE. Your article and news pages, style.css, script.js, psx.html and your existing images stay as they are.
+
+HOW TO UPLOAD ON GITHUB (website, no software needed)
+  1. Open your repo, press  Add file  >  Upload files.
+  2. Drag in all 7 files and the "images" folder from this folder (the folder keeps its structure).
+  3. Type a message such as "New home, explore, news and academy pages" and press Commit changes.
+  4. Wait about a minute, then open the site and press Ctrl+F5 (or Cmd+Shift+R) to see it.
+
+HOW TO ADD A NEW ARTICLE OR NEWS ITEM LATER
+  1. Make its own page in articles/ or news/ as you do now, and put its picture in images/small/articles/ or images/small/news/.
+  2. Open data.js, copy one entry from the right list, paste it at the TOP of that list, and change the words.
+  3. Save. The home, explore and news pages all update by themselves, newest first.
+  To feature something in the carousels, set  featured:true  on it (trending). Set it back to false later.
