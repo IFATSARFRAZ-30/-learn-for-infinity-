@@ -9,17 +9,15 @@
 <link rel="stylesheet" href="site.css"></head>
 <body data-page="home">
 <div class="sheet"><div class="wrap">
-  <nav class="topbar" aria-label="Main"><a class="tab" href="explore.html">explore</a><a class="tab" href="news.html">news</a><a class="tab" href="academy.html">academy</a></nav>
-  <header class="brand">
-    <a href="index.html">
+  <header class="top">
+    <a class="brandlink" href="index.html">
       <div class="logo"><svg viewBox="0 0 34 20" aria-hidden="true"><path d="M8,10 C8,3 15,3 17,10 C19,17 26,17 26,10 C26,3 19,3 17,10 C15,17 8,17 8,10"/></svg>learn for infinity</div>
       <svg class="ul" viewBox="0 0 212 8" aria-hidden="true"><path d="M2,5 C50,2 160,2 210,5"/></svg>
       <div class="tagline">business · finance · technology</div>
     </a>
-    <form class="search" action="explore.html" method="get" role="search"><input type="search" name="q" placeholder="search articles, explainers, lessons…" aria-label="Search the site"><button type="submit">search</button></form>
+    <nav class="tabs" aria-label="Main"><a class="tab" href="explore.html">explore</a><a class="tab" href="news.html">news</a><a class="tab" href="academy.html">academy</a></nav>
+    <form class="search" action="explore.html" method="get" role="search"><input type="search" name="q" placeholder="search articles and lessons…" aria-label="Search the site"><button type="submit">search</button></form>
   </header>
-  <div class="pills"><a class="pill" href="explore.html">all</a><a class="pill" href="psx.html">psx</a><a class="pill" href="explore.html?t=business">business</a><a class="pill" href="explore.html?t=finance">finance</a><a class="pill" href="explore.html?t=technology">technology</a><a class="pill" href="explore.html?t=tools">tools</a></div>
-
   <section class="hero">
     <div class="frame"><div class="carousel" id="hero-car" aria-roledescription="carousel" aria-label="Featured and newest articles"><div class="bar"></div><div class="track"></div><div class="ctrl"><div class="dots" role="tablist" aria-label="Choose item"></div><div class="arrows"><button class="arrow prev" aria-label="Previous">←</button><button class="arrow next" aria-label="Next">→</button></div></div></div></div>
     <div class="frame coral">
@@ -29,14 +27,15 @@
       </aside>
     </div>
   </section>
+  <div class="pills"><a class="pill" href="explore.html">all</a><a class="pill" href="psx.html">psx</a><a class="pill" href="explore.html?t=business">business</a><a class="pill" href="explore.html?t=finance">finance</a><a class="pill" href="explore.html?t=technology">technology</a><a class="pill" href="explore.html?t=tools">tools</a></div>
 
-  <div class="label">learn<a class="more" href="academy.html#courses">all courses</a></div>
+  <div class="lrow"><div class="label">learn</div><a class="more" href="academy.html#courses">all courses</a></div>
   <div class="grid" id="learn-grid"></div>
 
-  <div class="label">tools and explainers<a class="more" href="explore.html?t=tools">more in explore</a></div>
+  <div class="lrow"><div class="label">tools and explainers</div><a class="more" href="explore.html?t=tools">more in explore</a></div>
   <div class="grid" id="tools-grid"></div>
 
-  <div class="label">videos<a class="more" href="academy.html#videos">watch all videos</a></div>
+  <div class="lrow"><div class="label">videos</div><a class="more" href="academy.html#videos">watch all videos</a></div>
   <div class="rail" id="video-rail"><button class="rail-btn l" aria-label="Scroll left">←</button><div class="rail-track"></div><button class="rail-btn r" aria-label="Scroll right">→</button></div>
 </div></div>
 
@@ -45,7 +44,7 @@
   <h2>Go beyond <em>free</em> content.</h2>
   <p>Paid tools from Explore and full courses from Academy, for when you want to master a subject and not just understand it.</p>
   <div class="receipts" id="receipts"></div>
-  <div class="promo-btns"><a class="btn" href="explore.html">browse paid tools →</a><a class="btn alt" href="academy.html#paid">browse paid courses →</a></div>
+  <div class="promo-btns"><a class="btn" href="explore.html#paid">browse paid tools →</a><a class="btn alt" href="academy.html#paid">browse paid courses →</a></div>
 </div></section>
 <footer class="foot"><div><a href="index.html">home</a><a href="explore.html">explore</a><a href="news.html">news</a><a href="academy.html">academy</a><a href="psx.html">psx</a></div>learn for infinity — business, finance and technology, explained.</footer>
 <script src="data.js"></script>

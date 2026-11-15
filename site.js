@@ -57,11 +57,8 @@
     var inner = '<div class="vthumb">' + (ART[v.art] || ART.bars) + '<span class="play"></span></div><h4>' + esc(v.title) + '</h4><div class="vtag">' + esc(v.tag) + '</div>';
     return linked ? '<a class="card" href="' + esc(v.href) + '" target="_blank" rel="noopener">' + inner + '</a>' : '<div class="card">' + inner + '</div>';
   }
-  function cardShop(p) {
-    return '<div class="card"><div class="cimg">' + img(p.image, '', true) + '</div><div class="crow2"><span class="badge" style="--c:var(--rust)">' + esc(p.kind) + '</span></div><h4>' + esc(p.title) + '</h4><p>' + esc(p.desc) + '</p><div class="price">' + esc(p.price) + '</div><a class="btn" href="' + esc(p.href) + '">buy on gumroad →</a></div>';
-  }
   function cardAd(p) {
-    return '<div class="ad"><div class="ad-tag">paid ' + esc(p.kind) + '</div><div class="cimg">' + img(p.image, '', true) + '</div><div><h4>' + esc(p.title) + '</h4><p>' + esc(p.desc) + '</p></div><div class="price">' + esc(p.price) + '</div><a class="btn" href="' + esc(p.href) + '">buy on gumroad →</a></div>';
+    return '<div class="ad"><div class="ad-tag">paid ' + esc(p.kind) + '</div><div class="cimg">' + img(p.image, '', true) + '</div><div><h4>' + esc(p.title) + '</h4><p>' + esc(p.desc) + '</p></div><div class="price">' + esc(p.price) + '</div><div class="ad-note">paid via gumroad — instant ' + (p.kind === 'tool' ? 'download' : 'access') + '</div><a class="btn" href="' + esc(p.href) + '">buy on gumroad →</a></div>';
   }
   var EMPTY = '<div class="card"><h4>Nothing here yet</h4><p>No posts match this filter. Try another topic, or check back soon.</p></div>';
 
@@ -197,8 +194,8 @@
       pills($('ex-pills'), [{ name: 'all' }, { name: 'psx', href: 'psx.html' }, { name: 'business' }, { name: 'finance' }, { name: 'technology' }, { name: 'tools' }], t, draw);
       if (q) { $('found').hidden = false; $('found').innerHTML = 'Showing results for “' + esc(params.get('q')) + '”. <a href="explore.html">clear</a>'; }
       draw(t);
-      if (D.tools.length) $('ads').innerHTML = D.tools.map(cardAd).join('');
-      else { $('ads').remove(); $('stage').classList.remove('with-ad'); }
+      if (D.tools.length) $('paid').innerHTML = newest(D.tools).map(cardAd).join('');
+      else { $('paid').remove(); $('stage').classList.remove('with-ad'); }
     },
 
     news: function () {
@@ -216,7 +213,8 @@
       var car = Carousel($('ac-car'));
       car.set(pick(D.courses, 6).map(function (c) { return slideOf('course', c); }));
       Rail($('ac-rail'), true).set(newest(D.videos).map(cardVideo).join(''));
-      $('ac-shop').innerHTML = newest(D.paid).map(cardShop).join('');
+      if (D.paid.length) $('paid').innerHTML = newest(D.paid).map(cardAd).join('');
+      else { $('paid').remove(); $('stage').classList.remove('with-ad'); }
     }
   };
 

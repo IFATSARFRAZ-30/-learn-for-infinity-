@@ -1,21 +1,15 @@
-LEARN FOR INFINITY: NEW PAGES
+LEARN FOR INFINITY: UPDATE (7 files, NO images)
 
-WHAT IS IN THIS FOLDER
-  index.html, explore.html, news.html, academy.html   replace the 4 files with the same names in your repo
-  data.js                                             NEW: all articles, news, courses and videos live here
-  site.css, site.js                                   NEW: shared styles and script for the 4 pages
-  images/small/                                       NEW: lighter copies of your pictures (about 0.8 MB in total)
+Upload these 7 files to the main level of your repo, replacing the ones with the same names:
+  index.html, explore.html, news.html, academy.html, data.js, site.css, site.js
 
-DO NOT DELETE ANYTHING ELSE. Your article and news pages, style.css, script.js, psx.html and your existing images stay as they are.
+Do NOT upload any images this time. Your pictures are already in the right place.
+(You can delete UPLOAD-STEPS.txt from the repo, it is not needed by the site.)
 
-HOW TO UPLOAD ON GITHUB (website, no software needed)
-  1. Open your repo, press  Add file  >  Upload files.
-  2. Drag in all 7 files and the "images" folder from this folder (the folder keeps its structure).
-  3. Type a message such as "New home, explore, news and academy pages" and press Commit changes.
-  4. Wait about a minute, then open the site and press Ctrl+F5 (or Cmd+Shift+R) to see it.
+On GitHub: Add file > Upload files > drag the 7 files > Commit changes.
+Then open the site and press Ctrl+F5 (Cmd+Shift+R on Mac).
 
-HOW TO ADD A NEW ARTICLE OR NEWS ITEM LATER
-  1. Make its own page in articles/ or news/ as you do now, and put its picture in images/small/articles/ or images/small/news/.
-  2. Open data.js, copy one entry from the right list, paste it at the TOP of that list, and change the words.
-  3. Save. The home, explore and news pages all update by themselves, newest first.
-  To feature something in the carousels, set  featured:true  on it (trending). Set it back to false later.
+WHY THE PICTURES WERE MISSING
+  The first version of data.js looked for pictures in images/small/... but that folder was never created in the repo.
+  This version of data.js looks where your pictures really are:
+    images/articles/   images/courses/   images/products/   and the news pictures in  images/ news/  (the folder name has a space)
